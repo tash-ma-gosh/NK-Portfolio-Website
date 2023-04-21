@@ -11,7 +11,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes> //put different pages here
-          <Route path="/" exact component={Home}/>
+          <Route path="/" exact element={<Home/>}/>
         </Routes>
       </Router>
     </div>
