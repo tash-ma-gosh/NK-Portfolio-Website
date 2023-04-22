@@ -1,6 +1,7 @@
 import React from 'react';
 import {ProjectList} from '../helpers/projectsList'
-import { MenuItem } from '@mui/material';
+import ProjectItem from '../components/ProjectItem';
+import '../styles/Projects.css'
 
 function Projects() {
   return (
@@ -8,7 +9,14 @@ function Projects() {
         <h1 className='projectsTitle'>My Projects</h1>
         <div className='projectsList'>
             {ProjectList.map((projectItem, key) => {
-                return <div> {projectItem.name} </div>;
+                return( 
+                    <ProjectItem 
+                    key={key}
+                        image={projectItem.image} 
+                        name={projectItem.name} 
+                        description={projectItem.description}
+                    />
+                );
             })}
         </div>
     </div>
