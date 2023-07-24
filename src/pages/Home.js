@@ -11,9 +11,10 @@ function Home() {
       <div className='headerContainer' >
         <div className='nameTitle'>
           <h1>Natasha Karnoto</h1>
-          <h3>UI/UX Designer&nbsp;&nbsp;|&nbsp;&nbsp;Web/Software Developer&nbsp;&nbsp;|&nbsp;&nbsp;Llama Lover </h3>  
+          <h3>Interactive Developer&nbsp;&nbsp;|&nbsp;&nbsp;UI/UX Designer&nbsp;&nbsp;|&nbsp;&nbsp;Llama Lover </h3>  
         </div>
-        <img src={HomePic}></img>
+        <img src={HomePic} alt='Natasha with headphones in front of monitor coding 
+        with rubber ducks all over and Herbert the Llama next to boba on her desk'></img>
       </div>
       
     </div>
