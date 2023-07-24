@@ -1,5 +1,7 @@
 import React from 'react';
 import "../styles/Home.css"
+import HomePic from "../assets/NookNook.png";
+
 
 function Home() {
  
@@ -8,8 +10,10 @@ function Home() {
   
       <div className='headerContainer' >
         <h1>Natasha Karnoto</h1>
-        <p>UI/UX Designer | Web/Software Developer | Llama Lover </p>
+        <h3>UI/UX Designer&nbsp;&nbsp;|&nbsp;&nbsp;Web/Software Developer&nbsp;&nbsp;|&nbsp;&nbsp;Llama Lover </h3>  
+        <img src={HomePic}></img>
       </div>
+      
     </div>
   );
 }

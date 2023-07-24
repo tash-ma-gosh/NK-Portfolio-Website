@@ -1,35 +1,50 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../assets/fonts/Montserrat.ttf") format('truetype');
+}
+
 .home {
     width: 100%;
     height: 90vh;
     display: flex;
     justify-content: center;
-    align-items: left;
+    align-items: center;
     flex-direction: column;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-family: "Montserrat", "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
   }
   
   .headerContainer {
     width: auto;
-    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /*margin-left: 50px;*/
   }
   
   .headerContainer h1 {
     justify-content: center;
     align-items: center;
-    font-size: 90px;
+    font-size: 4.17em;
     height: 60px;
-    font-weight: 50;
-    color: black;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
   }
   
-  .headerContainer p {
+  .headerContainer h3 {
     padding: 0;
-    font-size: 40px;
+    font-size: 1.78em;
+    letter-spacing: 0.13em;
+    font-family: 'Gill Sans MT', 'Gill Sans', 'Trebuchet MS', sans-serif;
     font-weight: lighter;
-    color: black;
+    color: rgb(255, 255, 255);
+  }
+
+  .headerContainer img {
+    height: auto;
+    width: 43.68%;
   }
   
   .headerContainer button {
@@ -74,7 +89,7 @@
     .headerContainer h1 {
       font-size: 40px;
       height: 30px;
-      color: white;
+      color: rgb(255, 255, 255);
     }
   
     .headerContainer p {

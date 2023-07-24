@@ -9,7 +9,7 @@ import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {
   return (
     
-    <div className="App" style={{ background: `linear-gradient(114deg, rgba(109,74,196,1) 0%, rgba(190,166,196,1) 38%, rgba(126,180,244,1) 100%)`}}>
+    <div className="App" style={{ background: `#0A192F`}}>
       
       <Router>
         <Navbar />
