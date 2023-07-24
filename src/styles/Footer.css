@@ -34,9 +34,41 @@
   }
   .credits p{
     text-align: center;
-    font-size: .75rem;
+    font-size: 1rem;
     font-family: "Open Sans";
   }
   .credits p a{
     color: white;
+  }
+
+
+  @media only screen and (max-width: 650px) {
+    .footer p {
+      font-family: 'Gill Sans MT', 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 1.05rem;
+      letter-spacing: 0.07em;
+      padding-bottom: .5rem;
+      color: white;
+    }
+
+    .socialMedia svg {
+      color: white;
+      margin: 20px;
+      font-size: 45px;
+      cursor: pointer;
+    }
+
+    .credits{
+      padding-top: 1.5rem;
+      padding-bottom: 2.8rem;
+    }
+    .credits p{
+      text-align: center;
+      font-size: .75rem;
+      font-family: "Open Sans";
+    }
+    .credits p a{
+      color: white;
+    }
+  
   }
