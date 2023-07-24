@@ -1,7 +1,8 @@
 .footer {
     width: 100%;
-    height: 200px;
-    background-color: #121619;
+    height: 30vh;
+    background: linear-gradient(180deg, #0A192F 50%, #655E67 100%);
+    background-color: #0A192F;
     display: flex;
     justify-content: center;
     align-items: center;

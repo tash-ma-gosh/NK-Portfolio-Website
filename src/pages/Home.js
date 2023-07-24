@@ -9,8 +9,10 @@ function Home() {
     <div className='home'>
   
       <div className='headerContainer' >
-        <h1>Natasha Karnoto</h1>
-        <h3>UI/UX Designer&nbsp;&nbsp;|&nbsp;&nbsp;Web/Software Developer&nbsp;&nbsp;|&nbsp;&nbsp;Llama Lover </h3>  
+        <div className='nameTitle'>
+          <h1>Natasha Karnoto</h1>
+          <h3>UI/UX Designer&nbsp;&nbsp;|&nbsp;&nbsp;Web/Software Developer&nbsp;&nbsp;|&nbsp;&nbsp;Llama Lover </h3>  
+        </div>
         <img src={HomePic}></img>
       </div>
       
