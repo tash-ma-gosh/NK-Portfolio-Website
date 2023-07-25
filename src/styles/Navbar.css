@@ -96,9 +96,17 @@
   
     .close button{
       display: block;
+      background-color: transparent;
+      border: none;
+      color: white;
+      cursor: pointer;
       position: absolute;
       top: 28px;
       right: 20px;
+    }
+
+    .close svg {
+      font-size: 40px;
     }
   
     .close .rightSide{
