@@ -10,10 +10,10 @@ function Footer() {
     <div className='footer'>
         <p>Other Digital Places I Occupy:</p>
         <div className='socialMedia'>
-           <LinkedInIcon />
-           <GitHubIcon />
-           <InstagramIcon /> 
-           <EmailOutlinedIcon /> 
+          <a href='https://www.linkedin.com/in/natashakarnoto/' target='_blank'><LinkedInIcon /></a>
+          <a href='https://github.com/tash-ma-gosh' target='_blank'><GitHubIcon /></a>
+          <a href='https://github.com/tash-ma-gosh' target='_blank'><InstagramIcon /></a>
+          <a href='mailto: abc@example.com' target='_blank'><EmailOutlinedIcon /></a>
         </div>
         <div className='credits'>
           <p>Designed and Coded by <a href="https://github.com/tash-ma-gosh/NK-Portfolio-Website" target="_blank">Me</a>!</p>

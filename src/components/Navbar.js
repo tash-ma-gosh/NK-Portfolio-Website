@@ -31,6 +31,9 @@ function Navbar() {
                 <Link to="/about"> About</Link>
                 <Link to="/projects"> Projects</Link>
                 <Link to="/contact"> Contact</Link>
+                <div className="btnDiv">
+                    <a class="resume-button" href="https://natashakarnoto.netlify.app//asset/NatashaKarnoto_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+                </div>
                 <button onClick={toggleNavbar}>
                     <ReorderIcon />
                 </button>
