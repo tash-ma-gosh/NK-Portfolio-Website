@@ -6,14 +6,14 @@ function ProjectItem({image, name, skills}) {
         <div style={{backgroundImage: `url(${image})` }}> </div>
         <h1>{name}</h1>
         {/* <p> {skills}</p> */}
-        <div className='skillTags'>
+        <ul className='skillTags'>
           {skills.map((skill, index) => (
-            <span key={index} className='skill'>
+            <li key={index} className='skill'>
               {skill}
-            </span>
+            </li>
           ))}
           
-        </div>
+        </ul>
         
 
     </div>

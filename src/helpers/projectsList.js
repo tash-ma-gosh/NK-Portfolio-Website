@@ -10,27 +10,29 @@ export const ProjectList = [
         href: "https://github.com/tash-ma-gosh"
     },
     {
-        name: "Case Study: SPCA Brandywine",
+        name: "Front-End Portfolio Development",
         image: ImagePlaceholder,
-        skills: ["C#", "User Research", "UX Design", "Touchdesigner"],
+        skills: ["React", "UI/UX Design"],
         href: "https://github.com/tash-ma-gosh"
     },
     {
-        name: "Front-End Portfolio Development",
+        name: "Case Study: Website Redesign",
         image: ImagePlaceholder,
-        skills: ["C#", "User Research", "UX Design", "Touchdesigner"],
+        skills: ["Figma", "User Research", "UX Design"],
         href: "https://github.com/tash-ma-gosh"
     },
+    {
+        name: "Sofia's Forest",
+        image: ImagePlaceholder,
+        skills: ["Python", "OSC", "Arduino"],
+        href: "https://github.com/tash-ma-gosh"
+    },
+    
     {
         name: "Climate Impact Competition",
         image: ImagePlaceholder,
-        skills: ["C#", "User Research", "UX Design", "Touchdesigner"],
+        skills: ["HTML/CSS", "User Research"],
         href: "https://github.com/tash-ma-gosh"
     },
-    {
-        name: "Sofia's",
-        image: ImagePlaceholder,
-        skills: ["C#", "User Research", "UX Design", "Touchdesigner"],
-        href: "https://github.com/tash-ma-gosh"
-    },
+    
 ]
