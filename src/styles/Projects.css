@@ -60,7 +60,7 @@
   }
   
   .projectItem h1,
-  .projectItem p {
+  .projectItem .skillTags {
     margin-left: 20px;
   }
 

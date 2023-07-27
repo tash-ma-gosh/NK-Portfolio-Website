@@ -5,11 +5,14 @@ import '../styles/Projects.css'
 
 function Projects() {
   return (
+    
     <div className='projects'>
-        <h1 className='projectsTitle'>My Work</h1>
+        
+        {/* <h1 className='projectsTitle'>My Work</h1> */}
         <div className='projectsList'>
             {ProjectList.map((projectItem, key) => {
                 return( 
+                    
                     <a href={projectItem.href} target='_blank'><ProjectItem 
                     key={key}
                         image={projectItem.image} 
