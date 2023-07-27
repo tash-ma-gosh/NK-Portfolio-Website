@@ -6,16 +6,16 @@ import '../styles/Projects.css'
 function Projects() {
   return (
     <div className='projects'>
-        <h1 className='projectsTitle'>My Projects</h1>
+        <h1 className='projectsTitle'>My Work</h1>
         <div className='projectsList'>
             {ProjectList.map((projectItem, key) => {
                 return( 
-                    <ProjectItem 
+                    <a href={projectItem.href} target='_blank'><ProjectItem 
                     key={key}
                         image={projectItem.image} 
                         name={projectItem.name} 
-                        description={projectItem.description}
-                    />
+                        skills={projectItem.skills}
+                    /></a>
                 );
             })}
         </div>

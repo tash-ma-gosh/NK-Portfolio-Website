@@ -1,24 +1,30 @@
 import ImagePlaceholder from "../assets/art.png";
+import DiatomPic from "../assets/diatom.png";
 
 export const ProjectList = [
     {
         name: "ANS Diatom Project",
-        image: ImagePlaceholder,
-        description: 'Currently Working with the Academy of natural science to create and exhibit to teach students about diatoms'
+        image: DiatomPic,
+        skills: 'insert catchy description woohoo',
+        // skills: ["C#", "User Research", "UX Design", "Touchdesigner"],
+        href: "https://github.com/tash-ma-gosh"
     },
     {
-        name: "SPCA Brandywine UI/UX Redesing",
+        name: "Case Study: SPCA Brandywine",
         image: ImagePlaceholder,
-        description: 'insert catchy description woohoo'
+        skills: 'insert catchy description woohoo',
+        href: "https://github.com/tash-ma-gosh"
     },
     {
         name: "Front-End Portfolio Development",
         image: ImagePlaceholder,
-        description: 'Currently Working with the Academy of natural science to create and exhibit to teach students about diatoms'
+        skills: 'skill',
+        href: "https://github.com/tash-ma-gosh"
     },
     {
-        name: "Climate Impact Case Study Competition",
+        name: "Climate Impact Competition",
         image: ImagePlaceholder,
-        description: 'Currently Working with the Academy of natural science to create and exhibit to teach students about diatoms'
+        skills: 'Skill',
+        href: "https://github.com/tash-ma-gosh"
     },
 ]

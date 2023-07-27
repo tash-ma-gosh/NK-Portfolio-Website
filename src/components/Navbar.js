@@ -3,6 +3,7 @@ import Logo from '../assets/Icon.svg'
 import Resume from '../assets/NatashaKarnoto_Resume.pdf'
 import { Link } from 'react-router-dom'
 import ReorderIcon from '@mui/icons-material/Reorder';
+import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import '../styles/Navbar.css'
 
 function Navbar()  {
@@ -22,6 +23,12 @@ function Navbar()  {
                 <ReorderIcon />
             </button>
 
+            <div className="closeButton">
+              <button onClick={toggleNavbar}>
+                <CloseOutlinedIcon />
+              </button>
+            </div>
+
             <div className="rightSide">
                 <Link to="/"> Home</Link>
                 <Link to="/about"> About</Link>
@@ -34,41 +41,6 @@ function Navbar()  {
       </nav>
     )
   }
-
-// function Navbar() {
-
-
-//         const [openLinks, setOpenLinks] = useState(false);
-
-//         const toggleNavbar = () => {
-//             setOpenLinks(!openLinks);
-//         };
-
-
-//     return(
-//         <div className="navbar">
-//             <div className="leftSide">
-//                 <img src={Logo} />
-//             </div>
-
-//             <div className="rightSide"  id={openLinks ? "open" : "close"}>
-//                 <Link to="/"> Home</Link>
-//                 <Link to="/about"> About</Link>
-//                 <Link to="/projects"> Projects</Link>
-//                 <Link to="/contact"> Contact</Link>
-//                 <Link to={Resume} download="NatashaKarnoto_Resume" 
-//                     target="_blank" rel="noopener noreferrer" 
-//                     className="resume-button"> Resume</Link>
-
-//                 <button onClick={toggleNavbar}>
-//                     <ReorderIcon />
-//                 </button>
-                
-//             </div>
-//         </div>
-//     )
-
-// }
 
 export default Navbar;
     
