@@ -60,7 +60,7 @@
   }
   
   .projectItem h1,
-  .projectItem .skillTags {
+  .projectItem .skill {
     margin-left: 20px;
   }
 
@@ -70,11 +70,11 @@
     font-size: 1.2em;
   }
 
-  .projectItem .skillTags{
+  .projectItem .skill{
     list-style-type: none;
   }
 
-  .projectItem .skillTags .skill{
+  .projectItem .tag .skill{
     padding-right: 0.90rem;
     line-height: 1.75rem;
     border-radius: 50%;
