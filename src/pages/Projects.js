@@ -1,7 +1,11 @@
 import React from 'react';
 import {ProjectList} from '../helpers/projectsList'
 import ProjectItem from '../components/ProjectItem';
+import {Link} from 'react-router-dom';
+
 import '../styles/Projects.css'
+import Page from '../pages/Page'
+// import { Switch } from '@mui/material';
 
 function Projects() {
   return (
@@ -13,16 +17,19 @@ function Projects() {
             {ProjectList.map((projectItem, key) => {
                 return( 
                     
-                    <a href={projectItem.href} target='_blank'><ProjectItem 
+                    <Link to={`/projects/${projectItem.id}`} target='_blank'><ProjectItem 
                     key={key}
                         image={projectItem.image} 
                         name={projectItem.name} 
                         skills={projectItem.skills}
-                    /></a>
+                    /></Link>
                 );
             })}
         </div>
     </div>
+
+            
+
   )
 }
 
