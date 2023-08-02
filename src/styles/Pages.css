@@ -18,40 +18,78 @@ src: url("../assets/fonts/Blinker.ttf") format('truetype');
     margin-right: 10%;
 }
 
+/* Top Section Styling */
+
 .top-section{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: .75fr;
     grid-template-areas: 
-        'header pic'
-        'para pic'
-        '. pic';
+        'overview pic';
     align-items: baseline;
 }
 
-/* .top-section h1,
-.top-section p{
-    margin-right: 2.75em;
-} */
+.top-section .overview{
+    grid-area: overview;
+    margin-right: 1.5em;
+}
 
 .top-section h1{
     font-size: 3.125rem;
+    font-weight: 600;
     font-family: "Montserrat", "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
-    grid-area: header;
+    
 }
 
 .top-section p{
     font-size: 1.5rem;
     font-family: "Blinker", "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
-    padding-top: 2em;
-    grid-area: para;
+    padding-top: 1.2em;
     align-self: stretch;
+    margin-right: 1em;
 }
 
 .top-section img{
     grid-area: pic;
     margin-left: auto;
     margin-right: auto;
-    height: 60%;
-    width: 90%;
+    height: 100%;
+    width: 85%;
+}
+
+.middle-section{
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+
+.middle-section .middle-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        'Goals Role'
+        'Goals Tools';
+    align-items: baseline;
+    
+}
+
+.middle-container p{
+    font-size: 1.5rem;
+}
+
+
+.middle-container .goal{
+    grid-area: Goals;
+    font-family: "Blinker", "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+    border-right: 3px solid white;
+
+}
+
+.middle-container .role{
+    grid-area: Role;
+    border-bottom: 3px solid white;
+}
+
+.middle-section .middle-container .tools{
+    grid-area: Tools;
 }

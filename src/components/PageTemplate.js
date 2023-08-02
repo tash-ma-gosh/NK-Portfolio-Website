@@ -5,11 +5,14 @@ function PageTemplate({content}) {
   return (
     <div className='page'>
       <div className='top-section'>
-        <h1>Title of Project</h1>
-        <p>Have one to three sentences describing the 
-          product and its purpose.</p>
+        <div className='overview'>
+          <h1>Title of Project</h1>
+          <p>Have one to three sentences describing the 
+            product and its purpose.</p>
+        </div>
         <img src={FillerImage} alt='Do not forget to include'></img>
       </div>
+
       <div className='middle-section'>
         <div className='middle-container'>
           <div className='goal'>
@@ -26,6 +29,7 @@ function PageTemplate({content}) {
           </div>
         </div>
       </div>
+      
       <div className='bottom-section'>
         <h2>More Context</h2>
         {/* Do a similar method to projects overview pageS */}
