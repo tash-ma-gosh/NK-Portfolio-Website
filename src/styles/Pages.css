@@ -1,3 +1,57 @@
-.page p{
+@font-face {
+    font-family: "Montserrat";
+    src: url("../assets/fonts/Montserrat.ttf") format('truetype');
+  }
+
+@font-face {
+font-family: "Blinker";
+src: url("../assets/fonts/Blinker.ttf") format('truetype');
+}
+
+.page{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     color: white;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.top-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        'header pic'
+        'para pic'
+        '. pic';
+    align-items: baseline;
+}
+
+/* .top-section h1,
+.top-section p{
+    margin-right: 2.75em;
+} */
+
+.top-section h1{
+    font-size: 3.125rem;
+    font-family: "Montserrat", "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+    grid-area: header;
+}
+
+.top-section p{
+    font-size: 1.5rem;
+    font-family: "Blinker", "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+    padding-top: 2em;
+    grid-area: para;
+    align-self: stretch;
+}
+
+.top-section img{
+    grid-area: pic;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60%;
+    width: 90%;
 }
