@@ -60,21 +60,41 @@ src: url("../assets/fonts/Blinker.ttf") format('truetype');
 .middle-section{
     border-top: 3px solid white;
     border-bottom: 3px solid white;
+    font-family: "Blinker", "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+
 }
 
 .middle-section .middle-container{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.middle-section .middle-container .middle-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
         'Goals Role'
         'Goals Tools';
-    align-items: baseline;
+    
+    /* place-items: center; */
+
+    padding-top: 3.5em;
+    padding-bottom: 3.5em;
     
 }
 
-.middle-container p{
+.middle-grid h2{
     font-size: 1.5rem;
+    margin-right: 1em;
+    padding-bottom: .5em;
+    text-decoration: underline;
+}
+
+.middle-grid p{
+    font-size: 1.2rem;
+    margin-right: 1.5em;
+    padding-bottom: 1.75em;
 }
 
 
@@ -82,14 +102,34 @@ src: url("../assets/fonts/Blinker.ttf") format('truetype');
     grid-area: Goals;
     font-family: "Blinker", "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
     border-right: 3px solid white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+    
 
+.middle-container .role h2,
+.middle-container .tools h2,
+.middle-container .role p,
+.middle-container .tools p
+{
+    margin-left: 50px;
 }
 
-.middle-container .role{
+
+
+.middle-grid .role{
     grid-area: Role;
     border-bottom: 3px solid white;
+    
 }
 
-.middle-section .middle-container .tools{
+.middle-grid .tools{
     grid-area: Tools;
+}
+
+.middle-grid .tools h2{
+    grid-area: Tools;
+    margin-top: 1rem;
 }

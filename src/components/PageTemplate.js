@@ -15,18 +15,20 @@ function PageTemplate({content}) {
 
       <div className='middle-section'>
         <div className='middle-container'>
-          <div className='goal'>
-            <h2>Goal</h2>
-            <p>Have one to three sentences describing the goal of the product</p>
-          </div>
-          <div className='role'>
-            <h2>My Role</h2>
-            <p>Software Developer, UI UX, Juggling</p>
-          </div>
-          <div className='tools'>
-            <h2>Tools</h2>
-            <p>Laptop, Pure Skill, and Maple Syrup</p>
-          </div>
+          <div className='middle-grid'>
+            <div className='goal'>
+              <h2>Goal:</h2>
+              <p>Have one to three sentences describing the goal of the product yada yada yada lorem ispsum woohoo  yada yada yada lorem ispsum woohoo</p>
+            </div>
+            <div className='role'>
+              <h2>My Role:</h2>
+              <p>Software Developer, UI UX, Juggling</p>
+            </div>
+            <div className='tools'>
+              <h2>Tools:</h2>
+              <p>Laptop, Pure Skill, and Maple Syrup</p>
+            </div>
+          </div>      
         </div>
       </div>
       
