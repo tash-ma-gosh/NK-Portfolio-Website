@@ -20,7 +20,13 @@ function Page() {
     
         <div className="pageContent">
         {pageItem ? (
-          <PageTemplate key={pageItem.id} content={pageItem.content} />
+          <PageTemplate key={pageItem.id} 
+          title={pageItem.title} 
+          purpose={pageItem.purpose}
+          goal={pageItem.goal}
+          role={pageItem.role}
+          tools ={pageItem.tools}
+          />
         ) : (
           <div>No content available for this project.</div>
         )}

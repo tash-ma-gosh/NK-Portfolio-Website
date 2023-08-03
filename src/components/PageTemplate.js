@@ -1,14 +1,13 @@
 import React from 'react'
 import FillerImage from '../assets/art.png'
 
-function PageTemplate({content}) {
+function PageTemplate({title, purpose, goal, role, tools}) {
   return (
     <div className='page'>
       <div className='top-section'>
         <div className='overview'>
-          <h1>Title of Project</h1>
-          <p>Have one to three sentences describing the 
-            product and its purpose.</p>
+          <h1>{title}</h1>
+          <p>{purpose}</p>
         </div>
         <img src={FillerImage} alt='Do not forget to include'></img>
       </div>
@@ -18,15 +17,15 @@ function PageTemplate({content}) {
           <div className='middle-grid'>
             <div className='goal'>
               <h2>Goal:</h2>
-              <p>Have one to three sentences describing the goal of the product yada yada yada lorem ispsum woohoo  yada yada yada lorem ispsum woohoo</p>
+              <p>{goal}</p>
             </div>
             <div className='role'>
               <h2>My Role:</h2>
-              <p>Software Developer, UI UX, Juggling</p>
+              <p>{role}</p>
             </div>
             <div className='tools'>
               <h2>Tools:</h2>
-              <p>Laptop, Pure Skill, and Maple Syrup</p>
+              <p>{tools}</p>
             </div>
           </div>      
         </div>
@@ -49,7 +48,7 @@ function PageTemplate({content}) {
 
       </div>
       
-        <p>{content}</p>
+        
 
     </div>
   )
