@@ -32,25 +32,20 @@ function PageTemplate({content}) {
         </div>
       </div>
       
+      <div className='process-section'>
+        <h2>My Process</h2>
+        <div className='indv-item'>
+          <img src={FillerImage} alt='Do not forget to include'></img>
+          <p>Have one to three sentences describing the goal of the product yada yada yada lorem ispsum woohoo  yada yada yada lorem ispsum woohoo</p>
+        </div>
+        <div className='indv-item'>
+          <img src={FillerImage} alt='Do not forget to include'></img>
+          <p>Have one to three sentences describing the goal of the product yada yada yada lorem ispsum woohoo  yada yada yada lorem ispsum woohoo</p>
+        </div>
+
+      </div>
+
       <div className='bottom-section'>
-        <h2>More Context</h2>
-        {/* Do a similar method to projects overview pageS */}
-        <div className='indv-item'>
-          <img src={FillerImage} alt='Do not forget to include'></img>
-          <p>A five word blurb description</p>
-        </div>
-        <div className='indv-item'>
-          <img src={FillerImage} alt='Do not forget to include'></img>
-          <p>A five word blurb description</p>
-        </div>
-        <div className='indv-item'>
-          <img src={FillerImage} alt='Do not forget to include'></img>
-          <p>A five word blurb description</p>
-        </div>
-        <div className='indv-item'>
-          <img src={FillerImage} alt='Do not forget to include'></img>
-          <p>A five word blurb description</p>
-        </div>
 
       </div>
       
