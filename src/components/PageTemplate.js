@@ -1,7 +1,7 @@
 import React from 'react'
 import FillerImage from '../assets/art.png'
 
-function PageTemplate({title, purpose, goal, role, tools}) {
+function PageTemplate({title, purpose,image, goal, role, tools}) {
   return (
     <div className='page'>
       <div className='top-section'>
@@ -9,7 +9,7 @@ function PageTemplate({title, purpose, goal, role, tools}) {
           <h1>{title}</h1>
           <p>{purpose}</p>
         </div>
-        <img src={FillerImage} alt='Do not forget to include'></img>
+        <img src={image} alt='Do not forget to include'></img>
       </div>
 
       <div className='middle-section'>

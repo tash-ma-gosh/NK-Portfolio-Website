@@ -23,6 +23,7 @@ function Page() {
           <PageTemplate key={pageItem.id} 
           title={pageItem.title} 
           purpose={pageItem.purpose}
+          image ={pageItem.image}
           goal={pageItem.goal}
           role={pageItem.role}
           tools ={pageItem.tools}
