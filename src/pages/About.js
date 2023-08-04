@@ -9,6 +9,10 @@ function About() {
     <div className='about'>
   
       <div className='introduction' >
+
+      <div className='profile'>
+            <img src={Me} alt='Natasha within front of monitor coding with a rubber duck next to her'></img>
+        </div>
       
         <div className='aboutMe'>
             <h1>About Me</h1>
@@ -18,9 +22,7 @@ function About() {
             <p>Currently, I am a Senior at Drexel University in the Custom Design Major  which combines Computer Science,
                 User Experience and Design, and Humanities. I intend to create digital products with the full stories of my users in mind.</p>
         </div>
-        <div className='profile'>
-            <img src={Me} alt='Natasha within front of monitor coding with a rubber duck next to her'></img>
-        </div>
+        
        
       </div>
       

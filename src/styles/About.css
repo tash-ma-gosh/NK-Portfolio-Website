@@ -57,3 +57,50 @@
     margin-top: 1rem;
     
   }
+
+  @media only screen and (max-width: 650px) {
+    .about {
+      justify-content: center;
+      align-items: center;
+    }
+
+    .introduction{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        margin-left: 0%;
+    }
+
+    .introduction .aboutMe{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .introduction .aboutMe h1{
+        font-size: 2.125rem;
+        font-weight: 500;
+        font-family: 'Montserrat', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        padding: 1.2rem;
+    }
+
+    .introduction .aboutMe p{
+        font-size: 1.15rem;
+        padding: .80rem;
+        line-height: 150%;
+        /* padding-right: 2rem; */
+    }
+
+    .introduction .profile{
+        width: 65%;
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        background-color: #E2AEB1;
+        border-radius: 50%;
+    }
+
+   
+   
+  }
