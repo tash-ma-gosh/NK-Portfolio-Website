@@ -13,6 +13,13 @@ function Navbar()  {
     const toggleNavbar=()=>{
       setToggle(!toggle);
     }
+
+    const scrollToBottom = () => {
+      window.scrollTo({
+        top: document.documentElement.scrollHeight,
+        behavior: 'smooth',
+      })
+    }
   
     return (
       <nav className={toggle?'open':'close'}>
@@ -33,7 +40,7 @@ function Navbar()  {
                 <Link to="/"> Home</Link>
                 <Link to="/about"> About</Link>
                 <Link to="/projects"> Projects</Link>
-                <Link to="/contact"> Contact</Link>
+                <Link onClick={scrollToBottom}> Contact</Link>
                 <Link to={Resume} download="NatashaKarnoto_Resume" 
                     target="_blank" rel="noopener noreferrer" 
                     className="resume-button"> Resume</Link>

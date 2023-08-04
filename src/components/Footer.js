@@ -7,7 +7,7 @@ import "../styles/Footer.css"
 
 function Footer() {
   return (
-    <div className='footer'>
+    <div className='footer' id='bottom'>
         <p>Other Digital Places I Occupy:</p>
         <div className='socialMedia'>
           <a href='https://www.linkedin.com/in/natashakarnoto/' target='_blank'><LinkedInIcon /></a>

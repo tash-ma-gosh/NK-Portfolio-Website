@@ -10,6 +10,9 @@ import Page from './pages/Page'
 import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
+
+  
+
   return (
     
     <div className="App" style={{ background: `#0A192F`}}>
@@ -21,6 +24,7 @@ function App() {
           <Route path="/projects" exact element={<Projects/>}/>
           <Route path="/about" exact element={<About/>}/>
           <Route path="/projects/:projectId" exact element={<Page/>}/>
+          <Route path="/contact" exact element={<Footer/>} />
         </Routes>
         <Footer />
       </Router>
