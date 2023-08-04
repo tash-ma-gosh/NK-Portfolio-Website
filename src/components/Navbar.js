@@ -14,12 +14,27 @@ function Navbar()  {
       setToggle(!toggle);
     }
 
+    const closeNavbar = () => {
+      setToggle(false);
+    };
+
     const scrollToBottom = () => {
       window.scrollTo({
         top: document.documentElement.scrollHeight,
         behavior: 'smooth',
       })
     }
+
+    const scrollToBottomAndClose = () => {
+      scrollToBottom();
+      closeNavbar();
+    };
+
+    <div className="closeButton">
+        <button onClick={toggleNavbar}>
+          <CloseOutlinedIcon />
+        </button>
+      </div>
   
     return (
       <nav className={toggle?'open':'close'}>
@@ -37,11 +52,11 @@ function Navbar()  {
             </div>
 
             <div className="rightSide">
-                <Link to="/"> Home</Link>
-                <Link to="/about"> About</Link>
-                <Link to="/projects"> Projects</Link>
-                <Link onClick={scrollToBottom}> Contact</Link>
-                <Link to={Resume} download="NatashaKarnoto_Resume" 
+                <Link to="/" onClick={closeNavbar}> Home</Link>
+                <Link to="/about" onClick={closeNavbar}> About</Link>
+                <Link to="/projects" onClick={closeNavbar}> Projects</Link>
+                <Link onClick={scrollToBottomAndClose}> Contact</Link>
+                <Link to={Resume} onClick={closeNavbar} download="NatashaKarnoto_Resume" 
                     target="_blank" rel="noopener noreferrer" 
                     className="resume-button"> Resume</Link>
             </div>
