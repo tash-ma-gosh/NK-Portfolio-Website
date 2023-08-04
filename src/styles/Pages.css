@@ -152,8 +152,8 @@ src: url("../assets/fonts/Blinker.ttf") format('truetype');
     font-size: 1.2rem;
     padding-top: 1.5rem;
     padding-bottom: 2.3rem;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 20%;
+    margin-right: 20%;
     font-family: "Blinker", "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
 }
 
@@ -251,5 +251,13 @@ src: url("../assets/fonts/Blinker.ttf") format('truetype');
     .middle-grid .tools{
         grid-area: Tools;
         margin-left: 1rem;
+    }
+
+    .process-section p {
+        font-size: 1.125rem;
+        padding-top: 1.5rem;
+        padding-bottom: 2rem;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 }
