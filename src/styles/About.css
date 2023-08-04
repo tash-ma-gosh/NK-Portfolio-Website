@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("../assets/fonts/Montserrat.ttf") format('truetype');
+  }
+
+.about{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+.introduction{
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        'About Pic';
+    align-content: flex-start;
+    padding: 5rem;
+    margin-left: 10%;
+    color: white;
+}
+
+.introduction .aboutMe{
+    grid-area: About;
+}
+
+.introduction .aboutMe h1{
+    font-size: 3.125rem;
+    font-weight: 500;
+    font-family: 'Montserrat', 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    padding-bottom: 1.2rem;
+}
+
+.introduction .aboutMe p{
+    font-size: 1.2rem;
+    padding-right: 5.5rem;
+    padding-bottom: .80rem;
+    line-height: 150%;
+}
+
+
+.introduction .profile{
+    width: 70%;
+    grid-area: Pic;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    background-color: #E2AEB1;
+    border-radius: 50%;
+}
+
+.introduction .profile img {
+    height: auto;
+    margin-left: -9%;
+    width: 70%;
+    margin-top: 1rem;
+    
+  }
