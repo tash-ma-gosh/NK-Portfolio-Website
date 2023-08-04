@@ -207,5 +207,49 @@ src: url("../assets/fonts/Blinker.ttf") format('truetype');
 
 
 @media only screen and (max-width: 850px) {
+    .middle-section .middle-container .middle-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+            'Goals Goals'
+            'Role Tools';
+        
+        /* place-items: center; */
     
+        padding-top: 1em;
+        padding-bottom: 3.5em;
+        
+    }
+
+    .middle-container .goal{
+        grid-area: Goals;
+        border-bottom: 3px solid white;
+        border-right: 0px;
+    }
+
+    .middle-container .role h2,
+    .middle-container .tools h2,
+    .middle-container .role p,
+    .middle-container .tools p
+    {
+        margin-left: 0px;
+    }
+
+    .middle-container .role h2,
+    .middle-container .tools h2{
+        margin-top: 1rem;
+    }
+
+    .middle-grid .role{
+        grid-area: Role;
+        border-bottom: 0;
+        border-right: 3px solid white;
+        
+    }
+
+    .middle-grid .tools{
+        grid-area: Tools;
+        margin-left: 1rem;
+    }
 }
