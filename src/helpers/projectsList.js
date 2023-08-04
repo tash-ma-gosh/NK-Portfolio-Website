@@ -4,35 +4,36 @@ import DiatomPic from "../assets/diatom.png";
 export const ProjectList = [
     {
         id: "diatom",
-        name: "ANS Diatom Project",
+        name: "Ongoing: Foodchain Game",
         image: DiatomPic,
         // skills: 'insert catchy description woohoo',
-        skills: ["C#", "User Research", "UX Design", "Touchdesigner"],
+        skills: ["Fullstack Developer", "UI/UX Design", "User Research"],
     },
     {
-        id: "portfolio",
-        name: "Front-End Portfolio Development",
+        id: "artura",
+        name: "Ongoing: Expanding Artura's Teaching Resource",
         image: ImagePlaceholder,
-        skills: ["React", "UI/UX Design"],
-    },
-    {
-        id: 3,
-        name: "Case Study: Website Redesign",
-        image: ImagePlaceholder,
-        skills: ["Figma", "User Research", "UX Design"],
-    },
-    {
-        id: 4,
-        name: "Sofia's Forest",
-        image: ImagePlaceholder,
-        skills: ["Python", "OSC", "Arduino"],
+        skills: ["User Research", "Product Management"],
     },
     
     {
-        id: 5,
-        name: "Climate Impact Competition",
+        id: "portfolio",
+        name: "Portfolio Website",
         image: ImagePlaceholder,
-        skills: ["HTML/CSS", "User Research"],
+        skills: ["Front-End Developer", "UI/UX Design"],
     },
+    {
+        id: "redesign",
+        name: "Website Redesign Case Study",
+        image: ImagePlaceholder,
+        skills: ["UI/UX Design", "User Research"],
+    },
+    {
+        id: "sofiaforest",
+        name: "Sofia's Forest",
+        image: ImagePlaceholder,
+        skills: ["Python Developer", "Circuit Engineering"],
+    },
+    
     
 ]
