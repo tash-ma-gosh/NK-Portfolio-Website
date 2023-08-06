@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 import Logo from '../assets/Icon.svg'
-import Resume from '../assets/OldNatashaKarnoto_Resume.pdf'
+import Resume from '../assets/NatashaKarnoto_Resume.pdf'
 import { Link } from 'react-router-dom'
 import ReorderIcon from '@mui/icons-material/Reorder';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
