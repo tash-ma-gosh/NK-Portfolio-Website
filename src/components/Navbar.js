@@ -39,7 +39,7 @@ function Navbar()  {
     return (
       <nav className={toggle?'open':'close'}>
           <div className="leftSide">
-                <img src={Logo} />
+              <Link to="/" onClick={closeNavbar}> <img src={Logo} /></Link>
             </div>
             <button onClick={toggleNavbar}>
                 <ReorderIcon />
