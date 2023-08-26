@@ -1,7 +1,7 @@
 import React from 'react'
 import FillerImage from '../assets/art.png'
 
-function PageTemplate({title, purpose,image, goal, role, tools}) {
+function PageTemplate({title, purpose,image, goal, role, tools, process}) {
   return (
     <div className='page'>
       <div className='top-section'>
@@ -32,15 +32,24 @@ function PageTemplate({title, purpose,image, goal, role, tools}) {
       </div>
       
       <div className='process-section'>
-        <h2>My Process</h2>
-        <div className='indv-item'>
-          <img src={FillerImage} alt='Do not forget to include'></img>
-          <p>Have one to three sentences describing the goal of the product yada yada yada lorem ispsum woohoo  yada yada yada lorem ispsum woohoo</p>
-        </div>
-        <div className='indv-item'>
-          <img src={FillerImage} alt='Do not forget to include'></img>
-          <p>Have one to three sentences describing the goal of the product yada yada yada lorem ispsum woohoo  yada yada yada lorem ispsum woohoo</p>
-        </div>
+
+        
+          {process.map((proc, index) => (
+            <div key={index} className='indv-item'>
+              
+              <div className='image-row'>
+                {proc.procImage.map((img, ind) => (
+                  <img key={ind} className='processImages' src={img}>
+                  </img>
+                ))}
+              </div>
+              
+              <p>{proc.paragraph}</p>
+            </div>
+            
+            
+          ))}
+
 
       </div>
 

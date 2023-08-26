@@ -27,6 +27,7 @@ function Page() {
           goal={pageItem.goal}
           role={pageItem.role}
           tools ={pageItem.tools}
+          process ={pageItem.process}
           />
         ) : (
           <div>No content available for this project.</div>
