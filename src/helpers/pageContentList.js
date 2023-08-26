@@ -12,16 +12,19 @@ export const PageContentList = [
         tools: "C#, Unity, Figma, Touch Desinger",
         process: [
             {   
+                title: "",
                 procImage: [NotePlay, Cover],
                 paragraph: ["Paragraph about this image ---- Romeo save me they tryna tell me how to feel this love is difficult but it is reeeeaalll. Dont be afraid, we will make it out of this mess Its a love story, baby, just say, Yesss"]
                 
             },
             {
+                title: "What's Next?",
                 procImage: [Cover, NotePlay],
                 paragraph: ["Paragraph about this image ---- Romeo save me they tryna tell me how to feel this love is difficult but it is reeeeaalll. Dont be afraid, we will make it out of this mess Its a love story, baby, just say, Yesss"]
 
             },
-        ]
+        ],
+        buttonLink: "vimeo.com/user206255839/"
     },
     {
         id: "artura",
@@ -30,7 +33,22 @@ export const PageContentList = [
         image: NotePlay,
         goal: "Create an accessible and engaging game to teach users how diatoms can end up in our diet",
         role:"Front-end/Interactive Developer + UX Researcher/Designer",
-        tools: "C#, Unity, Figma, Touch Desinger"
+        tools: "C#, Unity, Figma, Touch Desinger",
+        process: [
+            {   
+                title: "",
+                procImage: [NotePlay, Cover],
+                paragraph: ["Paragraph about this image ---- Romeo save me they tryna tell me how to feel this love is difficult but it is reeeeaalll. Dont be afraid, we will make it out of this mess Its a love story, baby, just say, Yesss"]
+                
+            },
+            {
+                title: "What's Next?",
+                procImage: [Cover, NotePlay],
+                paragraph: ["Paragraph about this image ---- Romeo save me they tryna tell me how to feel this love is difficult but it is reeeeaalll. Dont be afraid, we will make it out of this mess Its a love story, baby, just say, Yesss"]
+
+            },
+        ],
+        buttonLink: ""
     },
     {
         id: "portfolio",

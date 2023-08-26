@@ -28,6 +28,7 @@ function Page() {
           role={pageItem.role}
           tools ={pageItem.tools}
           process ={pageItem.process}
+          link = {pageItem.buttonLink}
           />
         ) : (
           <div>No content available for this project.</div>

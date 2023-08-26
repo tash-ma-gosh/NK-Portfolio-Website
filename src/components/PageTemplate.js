@@ -1,7 +1,9 @@
 import React from 'react'
 import FillerImage from '../assets/art.png'
 
-function PageTemplate({title, purpose,image, goal, role, tools, process}) {
+function PageTemplate({title, purpose,image, goal, role, tools, process, link}) {
+  const isThereLink = !link || link.trim() === "";
+  
   return (
     <div className='page'>
       <div className='top-section'>
@@ -36,6 +38,8 @@ function PageTemplate({title, purpose,image, goal, role, tools, process}) {
         
           {process.map((proc, index) => (
             <div key={index} className='indv-item'>
+
+              <h3>{proc.title}</h3>
               
               <div className='image-row'>
                 {proc.procImage.map((img, ind) => (
@@ -54,6 +58,15 @@ function PageTemplate({title, purpose,image, goal, role, tools, process}) {
       </div>
 
       <div className='bottom-section'>
+
+        {!isThereLink && (
+          <div className='linkButton'>
+            <p>Check It Out!</p>
+          </div>
+        )
+
+        }
+        
 
       </div>
       

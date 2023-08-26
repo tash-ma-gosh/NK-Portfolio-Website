@@ -17,7 +17,7 @@ function Projects() {
             {ProjectList.map((projectItem, key) => {
                 return( 
                     
-                    <Link to={`/projects/${projectItem.id}`} target='_blank'><ProjectItem 
+                    <Link to={`/projects/${projectItem.id}`}><ProjectItem 
                     key={key}
                         image={projectItem.image} 
                         name={projectItem.name} 
