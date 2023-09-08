@@ -1,5 +1,7 @@
 import NotePlay from "../assets/NootPlay.jpg"
 import Cover from "../assets/portfolioThumbnail.png"
+import TouchDesigner from "../assets/TouchDesigner.png"
+
 
 export const PageContentList = [
     {
@@ -12,10 +14,9 @@ export const PageContentList = [
         tools: "C#, Unity, Figma, Touch Desinger",
         process: [
             {   
-                title: "",
-                procImage: [NotePlay, Cover],
-                paragraph: ["Paragraph about this image ---- Romeo save me they tryna tell me how to feel this love is difficult but it is reeeeaalll. Dont be afraid, we will make it out of this mess Its a love story, baby, just say, Yesss"]
-                
+                title: "Interaction Prototyping",
+                procImage: [TouchDesigner],
+                paragraph: ["During the prototyping phase, Touchdesigner was used to track player hand movement during initial user playtesting. The screenshot above shows how different nodes were used to filter out any unecessary body data before sending an OSC signal to the game within Unity"]   
             },
             {
                 title: "What's Next?",
